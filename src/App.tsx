@@ -18,7 +18,9 @@ function App() {
 
   const checkTodo = (id: number) => {
     setTodo(
-      [...todos].map((t) => (t.id === id ? { ...t, checked: !t.checked } : t))
+      [...todos]
+        .map((t) => (t.id === id ? { ...t, checked: !t.checked } : t))
+        .sort((a, b) => Number(a.checked) - Number(b.checked))
     );
   };
 

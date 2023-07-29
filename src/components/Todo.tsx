@@ -6,7 +6,7 @@ interface Iprops {
   checkTodo: (todo: number) => void;
 }
 
-export default function Card({ todo, deleteTodo, checkTodo }: Iprops) {
+export default function Todo({ todo, deleteTodo, checkTodo }: Iprops) {
   return (
     <li
       className="bg-white w-full flex mt-4 p-2 rounded-md items-center"
